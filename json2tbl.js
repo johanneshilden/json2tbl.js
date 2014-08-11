@@ -30,6 +30,10 @@ var json2tbl = (function(){
 
         if (json instanceof Array) {
 
+            if (!json.length) {
+                return text('');
+            }
+
             var table = elem('table'),
                 tbody = elem('tbody');
 
