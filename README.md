@@ -1,7 +1,7 @@
 json2tbl.js
 ===========
 
-Small JS-script for turning a JSON object into a HTML table.
+Small script for turning a JSON object into a HTML table.
 
 Very limited in functionality, yet some ancient JavaScript theorists find it useful.
 
