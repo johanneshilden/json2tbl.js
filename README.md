@@ -8,10 +8,12 @@ Very limited in functionality, yet some ancient JavaScript theorists find it use
 Example:
 
 ```
-$('body').append(json2tbl.build({
+var obj = {
    name: 'JavaScript',
    purpose: 'glorious'
-}));
+};
+
+$('body').append(json2tbl.build(obj));
 ```
 Result:
 
