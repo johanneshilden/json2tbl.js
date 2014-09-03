@@ -26,7 +26,12 @@ var json2tbl = (function(){
     function build(json, config) {
 
         var elem = function(n) { return document.createElement(n); },
-            text = function(n) { return document.createTextNode(n); };
+            text = function(n) { 
+                if (n instanceof Object) {
+                    n = JSON.stringify(n);
+                }
+                return document.createTextNode(n); 
+            };
 
         if (json instanceof Array) {
 
